@@ -14,7 +14,7 @@ async function cotizarSeguroVehicular() {
         let vehiculo = await rl.question('Ingrese la marca y modelo del vehículo: ');
         vehiculo = vehiculo.trim().replace(/\s+/g, ' ');
 
-        // 3. Validación Numérica del precio base
+      
         let precioStr = await rl.question('Ingrese el monto base estimado del auto ($): ');
         let precioBase = parseFloat(precioStr);
 
